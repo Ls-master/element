@@ -99,6 +99,10 @@ export default {
       validator(val) {
         return ['horizontal', 'vertical'].indexOf(val) !== -1;
       }
+    },
+    mouse_enter_autoplay: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -163,12 +167,16 @@ export default {
   methods: {
     handleMouseEnter() {
       this.hover = true;
-      this.pauseTimer();
+      if (!this.mouse_enter_autoplay) {
+        this.pauseTimer();
+      }
     },
 
     handleMouseLeave() {
       this.hover = false;
-      this.startTimer();
+      if (!this.mouse_enter_autoplay) {
+        this.startTimer();
+      }
     },
 
     itemInStage(item, index) {

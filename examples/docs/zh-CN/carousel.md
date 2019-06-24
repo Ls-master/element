@@ -11,7 +11,7 @@
 <template>
   <div class="block">
     <span class="demonstration">默认 Hover 指示器触发</span>
-    <el-carousel height="150px">
+    <el-carousel height="150px" :mouse_enter_autoplay="true">
       <el-carousel-item v-for="item in 4" :key="item">
         <h3 class="small">{{ item }}</h3>
       </el-carousel-item>
@@ -186,6 +186,7 @@
 | initial-index | 初始状态激活的幻灯片的索引，从 0 开始 | number | — | 0 |
 | trigger | 指示器的触发方式 | string | click | — |
 | autoplay | 是否自动切换 | boolean | — | true |
+| mouse_enter_autoplay | 鼠标移入时是否继续自动切换 | boolean | — | false |
 | interval | 自动切换的时间间隔，单位为毫秒 | number | — | 3000 |
 | indicator-position | 指示器的位置 | string | outside/none | — |
 | arrow | 切换箭头的显示时机 | string | always/hover/never | hover |
