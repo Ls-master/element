@@ -1,8 +1,8 @@
 {
-  "name": "element-ui",
+  "name": "ls-master-element",
   "version": "1.1.1",
   "ele-version": "2.9.2",
-  "description": "A Component Library for Vue.js.",
+  "description": "A Component Library for Ls-master",
   "main": "lib/element-ui.common.js",
   "files": [
     "lib",

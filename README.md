@@ -87,13 +87,13 @@
 
 ## Install
 ```shell
-npm install element-ui -S
+npm install ls-master-element -S
 ```
 
 ## Quick Start
 ``` javascript
 import Vue from 'vue'
-import Element from 'element-ui'
+import Element from 'ls-master-element'
 
 Vue.use(Element)
 
@@ -108,6 +108,19 @@ Vue.component(Select.name, Select)
 Vue.component(Button.name, Button)
 ```
 For more information, please refer to [Quick Start](http://element.eleme.io/#/en-US/component/quickstart) in our documentation.
+
+## Dev
+```shell
+sudo npm i
+```
+```shell
+npm run dev
+```
+
+## Build
+```shell
+npm run dist
+```
 
 ## Browser Support
 Modern browsers and Internet Explorer 10+.
